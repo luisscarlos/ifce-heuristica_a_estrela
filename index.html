@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IFCE - Int. Computacional - Heuristica A* - JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="breadth-search-container">
+        <div class="breadth-search-canvas">
+            <canvas id="canvas" width="520px" height="520px"></canvas>
+            <div class="container">
+                <div class="column column-center">
+                    <div>Início:</div>
+                    <div>Objetivo:</div>
+                </div>
+                <div class="column column-left">
+                    <div>X <input type="text" value="5" id="x_start" maxlength="2"> Y <input type="text" value="2" id="y_start" maxlength="2"></div>
+                    <div>X <input type="text" value="9" id="x_goal" maxlength="2"> Y <input type="text" value="11" id="y_goal" maxlength="2"></div>
+                </div>
+                <div class="column column-right">
+                    <input type="button" value="Executar!" id="start-button" onclick="start()">
+                </div>
+            </div>
+        </div>
+        <div class="search-info">
+            <div class="caminho">
+                <p>
+                    <span><b>Caminho</b>: </span>
+                    <span class="caminho-list">...</span>
+                </p>
+            </div>
+            <div class="alcancavel">
+                <p>
+                    <span><b>Alcançável</b>: </span>
+                    <span class="alcancavel-list">...</span>
+                </p>
+            </div>
+            <div class="explorado">
+                <span><b>Explorado</b>: </span>
+                <span class="explorado-list">...</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/search.js"></script>
+</html>
